@@ -1,5 +1,6 @@
 import { Card, CardBody, HStack, Heading, Image } from "@chakra-ui/react";
 import { Game } from "../hooks/useGames";
+import Emoji from "./Emoji";
 import MetaScore from "./MetaScore";
 import PlatformIconList from "./PlatformIconList";
 import getCroppedImageUrl from "./image-url";
@@ -19,7 +20,9 @@ const GameCard = ({ game }: Props) => {
           />
           <MetaScore score={game.metacritic}></MetaScore>
         </HStack>
-        <Heading fontSize="2xl">{game.name} </Heading>
+        <Heading fontSize="2xl">
+          {game.name} <Emoji rating={game.rating_top}></Emoji>
+        </Heading>
       </CardBody>
     </Card>
   );
