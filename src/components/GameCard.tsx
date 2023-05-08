@@ -1,6 +1,6 @@
 import { Card, CardBody, HStack, Heading, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { Game } from "../entities/Game";
+import Game from "../entities/Game";
 import Emoji from "./Emoji";
 import MetaScore from "./MetaScore";
 import PlatformIconList from "./PlatformIconList";
